@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            width: 300px;
+            padding: 15px;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 8px;
+            background-color: #4285f4;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #3367d6;
+        }
+        .status {
+            margin-top: 10px;
+            padding: 8px;
+            border-radius: 4px;
+            display: none;
+        }
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+            display: block;
+        }
+        .error {
+            background-color: #f8d7da;
+            color: #721c24;
+            display: block;
+        }
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            border-top: 1px solid #eee;
+            padding-top: 10px;
+        }
+        .footer h3 {
+            margin: 10px 0;
+            font-size: 14px;
+            color: #666;
+        }
+        .footer a {
+            color: #4285f4;
+            text-decoration: none;
+            font-size: 12px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>E-Okul Beceri Edinimi Asistanı</h3>
+        <p>Gemini API anahtarınızı girin:</p>
+        <input type="text" id="apiKey" placeholder="API Key">
+        <button id="saveButton">Kaydet</button>
+        <div id="status" class="status"></div>
+        
+        <div class="footer">
+            <h3>Hasan Özdemir 2024-2025</h3>
+            <a href="https://github.com/develophasan" target="_blank">github.com/develophasan</a>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html> 

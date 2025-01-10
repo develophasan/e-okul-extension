@@ -1,0 +1,36 @@
+{
+    "manifest_version": 3,
+    "name": "E-Okul Beceri Edinimi Asistanı",
+    "version": "1.0",
+    "description": "E-Okul beceri edinimi formlarını Gemini API ile doldurmaya yardımcı olan Chrome uzantısı",
+    "permissions": [
+        "contextMenus",
+        "storage",
+        "activeTab"
+    ],
+    "host_permissions": [
+        "https://e-okul.meb.gov.tr/*"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "images/icon16.png",
+            "48": "images/icon48.png",
+            "128": "images/icon128.png"
+        }
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://e-okul.meb.gov.tr/*"],
+            "js": ["content.js"]
+        }
+    ],
+    "icons": {
+        "16": "images/icon16.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+    }
+} 
