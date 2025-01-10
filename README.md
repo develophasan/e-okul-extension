@@ -37,7 +37,7 @@ Bu Chrome eklentisi, öğretmenlerin E-Okul sisteminde beceri edinimi değerlend
 
 - Node.js tabanlı geliştirme
 - Chrome Extension Manifest V3 kullanımı
-- OpenAI API entegrasyonu
+- GEMINI API entegrasyonu
 - Tarayıcı otomasyonu için özel geliştirilen modüller
 
 ## Lisans
